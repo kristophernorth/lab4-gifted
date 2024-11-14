@@ -40,7 +40,45 @@
 
   <!-- SECTION -->
   <main>
-    
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 bg-success pt-4">
+          <H1>Gifted</H1>
+          <form>
+            <div class="input-group mb-3">
+              <label for="tag" class="form-label">Tag</label>
+              <input type="text" class="form-control" name="tag" id="tag" required maxlength="120">
+            </div>
+            <div class="mb-3">
+              <label for="url" class="form-label">Url</label>
+              <input type="url" class="form-control" name="url" id="url" required maxlength="500">
+            </div>
+            <div class="text-end">
+              <button class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+          <hr>
+        </div>
+        <div class="col-md-8 text-center pt-4">
+          <div class="row  justify-content-around">
+            <div class="col-md-3 card">
+              <img
+                src="https://images.unsplash.com/photo-1525869916826-972885c91c1e?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="bear">
+              <p>Text description</p>
+            </div>
+            <div class="col-md-3 card">
+              <img class="card-img"
+                src="https://plus.unsplash.com/premium_photo-1673795754005-214e3e1fccba?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="bear">
+              <div class="card-img-overlay">
+                <p class="card-text text-light">Text description</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- SECTION -->
