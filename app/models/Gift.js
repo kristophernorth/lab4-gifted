@@ -2,8 +2,9 @@
 
 export class Gift {
   constructor(data) {
+    this.id = data.id
     this.tag = data.tag
-    this.Url = data.url
+    this.url = data.url
     this.opened = data.opened
     this.creatorId = data.creatorId
     this.profileIsOpened = data.profileIsOpened
