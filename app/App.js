@@ -6,7 +6,6 @@ const USE_ROUTER = false
 class App {
 
   AuthController = new AuthController()
-
   GiftsController = new GiftsController()
 
   constructor() {

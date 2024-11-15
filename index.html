@@ -44,7 +44,8 @@
       <div class="row">
         <div class="col-md-4 bg-success pt-4">
           <H1>Gifted</H1>
-          <form>
+          <!-- NOTE - This is the input form -->
+          <form onsubmit="app.GiftsController.createGift()">
             <div class="input-group mb-3">
               <label for="tag" class="form-label">Tag</label>
               <input type="text" class="form-control" name="tag" id="tag" required maxlength="120">
@@ -59,8 +60,8 @@
           </form>
           <hr>
         </div>
-        <div id="gifts" class="col-md-8 pt-4">
-          <div class="row">
+        <div class="col-md-8 pt-4">
+          <div id="gifts" class="row">
             <!-- NOTE - Here is the opened-gift card -->
             <!-- <div class="col-md-3 card">
               <img
@@ -77,6 +78,8 @@
                 <p class="card-text text-light">Text description</p>
               </div>
             </div> -->
+            <!-- NOTE - this is the delete button -->
+            <!-- <button onclick="app.GiftsController.deleteGift('${this.id}')" class="btn btn-danger">Delete</button> -->
           </div>
         </div>
       </div>

@@ -20,6 +20,20 @@ class GiftsService {
     AppState.gifts.splice(giftIndex, 1, openedGift)
   }
 
+  async createGift(giftData) {
+    const response = await api.post('api/gifts', giftData)
+    console.log('created gift', response.data);
+    const gift = new Gift(response.data)
+    AppState.gifts.unshift(gift)
+  }
+
+  async deleteGift(giftId) {
+    const response = await api.delete(`api/gifts/${giftId}`)
+    console.log('deleted gift', response.data);
+    const giftIndex = AppState.gifts.findIndex(gift => gift.id == giftId)
+    AppState.gifts.splice(giftIndex, 1)
+  }
+
 }
 
 export const giftsService = new GiftsService
